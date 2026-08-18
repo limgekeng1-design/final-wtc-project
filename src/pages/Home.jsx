@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
-  // ប្រើ BASE_URL ដើម្បីទាញយករូបភាពពី public/img/ ឱ្យត្រូវ Path ទាំងលើ Local និង GitHub Pages
-  const bgImage = `${import.meta.env.BASE_URL}img/hero-bg.jfif`;
+  // ប្រើ BASE_URL ជាមួយ Extension .jpg ថ្មី
+  const bgImage = `${import.meta.env.BASE_URL}img/hero-bg.jpg`;
 
   return (
     <div
@@ -25,6 +25,10 @@ export default function Home() {
         style={{
           textAlign: "center",
           maxWidth: "600px",
+          backgroundColor: "rgba(255, 255, 255, 0.4)", // បន្ថែមផ្ទៃថ្លាបន្តិចដើម្បីងាយស្រួលមើលអក្សរ
+          padding: "30px",
+          borderRadius: "20px",
+          backdropFilter: "blur(4px)",
         }}
       >
         <h1
@@ -33,7 +37,6 @@ export default function Home() {
             fontWeight: "bold",
             color: "#1f2937",
             marginBottom: "16px",
-            textShadow: "0 1px 2px rgba(255, 255, 255, 0.8)",
           }}
         >
           Welcome to Our Flower Shop
@@ -46,7 +49,6 @@ export default function Home() {
             marginBottom: "28px",
             lineHeight: "1.6",
             fontWeight: "500",
-            textShadow: "0 1px 2px rgba(255, 255, 255, 0.8)",
           }}
         >
           We provide fresh and beautiful flowers for all your special occasions.
