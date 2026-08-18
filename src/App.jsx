@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+// 1. ដូរពី BrowserRouter ទៅជា HashRouter
+import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import { CartProvider, useCart } from './context/CartContext';
-import { AuthProvider } from './context/AuthContext'; // ថែម Import AuthProvider
+import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/Navbar';
 
 import logoImg from './assets/new_logo.png';
@@ -104,6 +105,7 @@ export default function App() {
   return (
     <AuthProvider>
       <CartProvider>
+        {/* Router ត្រង់នេះឥឡូវដំណើរការដោយ HashRouter */}
         <Router>
           <div className="app-container">
             <Navbar />
