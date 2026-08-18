@@ -16,16 +16,8 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  
   color: #333333;
-
-  /* ----------------------------------------------------
-     Path ត្រឹមត្រូវសម្រាប់ public/img/hero-bg.jfif
-     ---------------------------------------------------- */
-  background-image: url('/final-wtc-project/img/hero-bg.jfif');
-  background-size: cover;       /* ពង្រីករូបឲ្យពេញអេក្រង់ */
-  background-position: center;  /* ដាក់រូបឲ្យចំកណ្តាល */
-  background-repeat: no-repeat; /* មិនឲ្យរូបជាន់គ្នា */
-  background-attachment: fixed; /* ឲ្យ Background នៅស្ងៀមពេល Scroll */
 }
 
 .main_content {
