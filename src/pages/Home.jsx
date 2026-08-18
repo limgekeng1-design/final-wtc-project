@@ -2,12 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  // ប្រើ BASE_URL ដើម្បីទាញយករូបភាពពី public/img/ ឱ្យត្រូវ Path ទាំងលើ Local និង GitHub Pages
+  const bgImage = `${import.meta.env.BASE_URL}img/hero-bg.jfif`;
+
   return (
     <div
       className="hero_section"
       style={{
-        // ហៅចេញពី public/img/hero-bg.jfif
-        backgroundImage: `url('/img/hero-bg.jfif')`,
+        backgroundImage: `url('${bgImage}')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
