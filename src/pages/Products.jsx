@@ -16,7 +16,7 @@ export default function Products() {
     { id: 9, name: "Red Tulips Bouquet", price: 20.00, img: `${import.meta.env.BASE_URL}img/red-tulip.jfif`, badge: "" },
     { id: 10, name: "Lilies Bouquet", price: 15.00, img: `${import.meta.env.BASE_URL}img/lilies.jfif`, badge: "" },
     { id: 11, name: "Tulips Bouquet", price: 20.00, img: `${import.meta.env.BASE_URL}img/tulips.jfif`, badge: "" },
-    { id: 12, name: "Yellow Rose Bouquet", price: 20.00, img: `${import.meta.env.BASE_URL}img/yellow-rose.jfif`, badge: "" },
+    { id: 12, name: "Yellow Rose Bouquet", price: 20.00, img: `${import.meta.env.BASE_URL}img/yellow-rose.jpg`, badge:""},
   ];
 
   return (
