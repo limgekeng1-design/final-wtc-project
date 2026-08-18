@@ -728,6 +728,12 @@ footer {
     max-width: 280px;
     height: 280px;
   }
+  .hero-section {
+  /* Relative path ចេញពី file CSS ទៅកាន់ folder assets */
+  background-image: url('../assets/your-background-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
   .products_section, .products_grid {
     grid-template-columns: repeat(2, 1fr);
